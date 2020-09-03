@@ -412,10 +412,16 @@ h6 {
 
 #media ul {
     list-style: none;
+    cursor: pointer;
 }
 
 #media ul li {
     display: inline-block;
+}
+
+#media a {
+    color: inherit;
+    text-decoration: none;
 }
 
 @media(max-width: 768px) {
