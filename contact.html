@@ -18,17 +18,17 @@
 
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
             rel="stylesheet">
-      <link rel="icon" type="image/png" href="./assets/favicon.svg" />
+      <link rel="icon" type="image/png" href="./assets/favicon.jpg" />
 
       <link rel="stylesheet" href="css/animate.css">
       <script src="js/wow.min.js"></script>
-
 </head>
 
 <body>
       <div class="wrapper">
             <nav>
                   <span id="brand">
+                        <img src="assets/Arash_Saadati.png" style="object-fit: contain;height: 35px;margin-right: 5px;" >
                         <a href="index.html">ARASH SAADATI</a>
                   </span>
                   <ul id="menu">
@@ -37,11 +37,11 @@
                         <li><a href="contact.html">Contact</a></li>
                   </ul>
                   <div id="toggle">
-                        <div class="span">menu</div>
+                        <div class="span">Menu</div>
                   </div>
             </nav>
             <div id="resize">
-                  <div class="close-btn">close</div>
+                  <div class="close-btn">Close</div>
                   <ul id="menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Me</a></li>
@@ -56,10 +56,11 @@
                               <div class="col-lg-8">
                                     <h3 class="wow fadeInUp" data-wow-delay="1s" style="margin-top: 40px;">Contact Me
                                     </h3><br>
-                                    <p class="wow fadeInUp" data-wow-delay="1.2s">If you need any help, or if you've got
-                                          any questions or suggestions, or you just want to say hello, please feel free
-                                          to contact me.</p>
-
+                                    <p class="wow fadeInUp" data-wow-delay="1.2s">
+                                          Please feel free to contact me if you need
+                                          any help, got any questions or 
+                                          suggestions, or just want to say hello. :)
+                                    </p>
                               </div>
                         </div>
                   </div>
@@ -141,7 +142,10 @@
                   document.getElementById('contact-form').addEventListener('submit', function (event) {
                         event.preventDefault();
                         emailjs.sendForm('service_1bvbbr9', 'template_tjayurt', event.target,
-                              'user_1FVxJPfmxDfnWkXuL8eVK')
+                              'user_1FVxJPfmxDfnWkXuL8eVK').
+                              then(result => {
+                                    alert("Message Sent!");
+                              })
                         event.target.reset();
                   })
             }
