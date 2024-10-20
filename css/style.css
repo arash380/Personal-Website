@@ -32,8 +32,7 @@ body {
 }
 
 .anim-typewriter {
-  animation: typewriter 4s steps(40) 1s 1 normal both,
-    blinkTextCussor 500ms steps(40) infinite normal;
+  animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
 }
 
 @keyframes typewriter {
@@ -65,39 +64,6 @@ body {
 
   to {
     border-right-color: transparent;
-  }
-}
-
-#quotes {
-  width: 100%;
-  top: 200px;
-  position: absolute;
-}
-
-#quote_1 {
-  margin-left: 55px;
-}
-
-#quote_2 {
-  float: right;
-  margin-right: 55px;
-}
-
-@media (max-width: 990px) {
-  #quote_1 {
-    object-fit: contain;
-    height: 200px;
-    margin-left: 0px;
-  }
-
-  #quote_2 {
-    display: none;
-  }
-
-  #quotes {
-    width: 100%;
-    text-align: center;
-    top: 355px;
   }
 }
 
@@ -486,6 +452,8 @@ h6 {
 }
 
 .aboutImage {
+  object-fit: contain;
+  height: 350px;
   margin-top: 30px;
   border-radius: 50%;
 }
@@ -499,42 +467,6 @@ h6 {
   object-fit: contain;
   height: 350px;
   border-radius: 7px;
-}
-
-#contact-form {
-  margin: 5% 1.4%;
-}
-
-#contact-form ul {
-  list-style: none;
-  border-radius: 5px;
-  margin-bottom: 40px;
-}
-
-#contact-form li {
-  padding: 10px;
-}
-
-#contact-form li:last-of-type {
-  border-bottom: none;
-}
-
-#contact-form label {
-  display: block;
-  font-size: 0.8em;
-  color: #999;
-  padding-left: 5px;
-}
-
-#contact-form input,
-#contact-form textarea {
-  width: 100%;
-  padding: 5px;
-  border: none;
-  resize: vertical;
-  background: transparent;
-  color: #fff;
-  font-weight: bolder;
 }
 
 input:focus {
@@ -564,11 +496,4 @@ textarea:focus {
 .send:hover {
   background: #dfdfdf;
   color: #101010;
-}
-
-@media (max-width: 768px) {
-  #contact-form {
-    margin: 5% -8%;
-    width: 98%;
-  }
 }
