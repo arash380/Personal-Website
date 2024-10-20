@@ -346,20 +346,39 @@ h6 {
 }
 
 .project3 {
-  background: url("../assets//burger-builder.png") no-repeat 50% 50%;
+  background: url("../assets/future_messenger.png") no-repeat 50% 50%;
   filter: grayscale(100%);
   background-size: cover;
 }
 
 .project3::after {
-  content: "Burger Builder";
+  content: "Future Messenger";
   font-family: "Roboto Mono";
   font-size: 36px;
   position: relative;
   color: #fff;
   display: block;
-  top: 45%;
-  left: -70%;
+  top: 40%;
+  left: -80%;
+  right: 0;
+  bottom: 0;
+}
+
+.project4 {
+  background: url("../assets/vtd.png") no-repeat 50% 50%;
+  filter: grayscale(100%);
+  background-size: cover;
+}
+
+.project4::after {
+  content: "Virus Tower Defense";
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  display: block;
+  top: 50%;
+  left: 105%;
   right: 0;
   bottom: 0;
 }
@@ -376,7 +395,8 @@ h6 {
 
   .project1::after,
   .project2::after,
-  .project3::after {
+  .project3::after,
+  .project4::after {
     display: none;
   }
 }
