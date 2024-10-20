@@ -308,13 +308,13 @@ h6 {
 }
 
 .project1 {
-  background: url("../assets/future_messenger.png") no-repeat 50% 50%;
+  background: url("../assets/my_components_lib.png") no-repeat 50% 50%;
   filter: grayscale(100%);
   background-size: cover;
 }
 
 .project1::after {
-  content: "Future Messenger";
+  content: "My React Library";
   font-family: "Roboto Mono";
   font-size: 36px;
   position: relative;
@@ -327,13 +327,13 @@ h6 {
 }
 
 .project2 {
-  background: url("../assets/vtd.png") no-repeat 50% 50%;
+  background: url("../assets/linkr.png") no-repeat 50% 50%;
   filter: grayscale(100%);
   background-size: cover;
 }
 
 .project2::after {
-  content: "Virus Tower Defense";
+  content: "Linkr";
   font-family: "Roboto Mono";
   font-size: 36px;
   position: relative;
